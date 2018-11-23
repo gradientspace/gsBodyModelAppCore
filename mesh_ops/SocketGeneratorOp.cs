@@ -34,8 +34,8 @@ namespace gsbody
         public SocketGeneratorOp() : base()
         {
             // set initial connector
-            //SocketConnector default_connector = new Type1SocketConnector();
-            SocketConnector default_connector = new OttobockSocketAdapter();
+            SocketConnector default_connector = new VariableSizeFlatBaseConnector();
+            //SocketConnector default_connector = new OttobockSocketAdapter();
             Connector = default_connector;
         }
 
